@@ -1,7 +1,9 @@
-Title
+Sync YouTube
 ====
 
-Hoge.
+Syncronize watch YouTube with multiple users.
+prototype.
+
 
 ## Description
 
