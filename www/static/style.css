@@ -1,0 +1,12 @@
+* { margin: 0; }
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+button {
+    width: 128px;
+    height: 64px;
+}

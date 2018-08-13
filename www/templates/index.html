@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href='{{ static_url("style.css") }}' />
+</head>
+
+<body>
+
+  <div id="player"></div>
+  <div>
+    <button id="jpop">jpop</button>
+    <button id="marshmallow">marshmallow</button>
+    <button id="ShapeOfYou">ShapeOfYou</button>
+  </div>
+  <div>
+    <input type="text" id="url">
+    <button id="postUrl">post</button>
+  </div>
+
+  <script>
+    // @see https://developers.google.com/youtube/iframe_api_reference?hl=ja
+
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  </script>
+
+  <script type="text/javascript" src='https://unpkg.com/rxjs/bundles/Rx.min.js'></script>
+  <script type="text/javascript" src='{{ static_url("jquery-1.11.2.js") }}'></script>
+  <script type="text/javascript" src='{{ static_url("main.js") }}'></script>
+</body>
+
+</html>
